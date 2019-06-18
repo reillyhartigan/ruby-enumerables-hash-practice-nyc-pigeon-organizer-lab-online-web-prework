@@ -12,7 +12,7 @@ describe "NYC Pigeon Organizer" do
           :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
           :brown => ["Queenie", "Alex"]
         },
-        :gender => {
+        :sex => {
           :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
           :female => ["Queenie", "Ms. K"]
         },
@@ -51,8 +51,8 @@ describe "NYC Pigeon Organizer" do
           ["purple", "grey"].each { |c| expect(@theo[:color]).to include(c) }
         end
         it "knows Theo is male" do
-          expect(@theo[:gender].length).to eq(1)
-          expect(@theo[:gender]).to include("male")
+          expect(@theo[:sex].length).to eq(1)
+          expect(@theo[:sex]).to include("male")
         end
         it "knows Theo lives on the subway" do
           expect(@theo[:lives].length).to eq(1)
@@ -69,8 +69,8 @@ describe "NYC Pigeon Organizer" do
           ["purple", "grey"].each { |c| expect(@pete[:color]).to include(c) }
         end
         it "knows Peter Jr. is male" do
-          expect(@pete[:gender].length).to eq(1)
-          expect(@pete[:gender]).to include("male")
+          expect(@pete[:sex].length).to eq(1)
+          expect(@pete[:sex]).to include("male")
         end
         it "knows Peter Jr. lives in the library" do
           expect(@pete[:lives].length).to eq(1)
@@ -87,8 +87,8 @@ describe "NYC Pigeon Organizer" do
           expect(@lucky[:color]).to include("purple")
         end
         it "knows Lucky is male" do
-          expect(@lucky[:gender].length).to eq(1)
-          expect(@lucky[:gender]).to include("male")
+          expect(@lucky[:sex].length).to eq(1)
+          expect(@lucky[:sex]).to include("male")
         end
         it "knows Lucky lives in central park" do
           expect(@lucky[:lives].length).to eq(1)
@@ -105,8 +105,8 @@ describe "NYC Pigeon Organizer" do
           ["grey", "white"].each { |c| expect(@ms_k[:color]).to include(c) }
         end
         it "knows Ms. K is female" do
-          expect(@ms_k[:gender].length).to eq(1)
-          expect(@ms_k[:gender]).to include("female")
+          expect(@ms_k[:sex].length).to eq(1)
+          expect(@ms_k[:sex]).to include("female")
         end
         it "knows Ms. K lives in central park" do
           expect(@ms_k[:lives].length).to eq(1)
@@ -123,8 +123,8 @@ describe "NYC Pigeon Organizer" do
           ["white", "brown"].each { |c| expect(@queenie[:color]).to include(c) }
         end
         it "knows Queenie is female" do
-          expect(@queenie[:gender].length).to eq(1)
-          expect(@queenie[:gender]).to include("female")
+          expect(@queenie[:sex].length).to eq(1)
+          expect(@queenie[:sex]).to include("female")
         end
         it "knows Queenie lives on the subway" do
           expect(@queenie[:lives].length).to eq(1)
@@ -141,8 +141,8 @@ describe "NYC Pigeon Organizer" do
           expect(@andrew[:color]).to include("white")
         end
         it "knows Andrew is male" do
-          expect(@andrew[:gender].length).to eq(1)
-          expect(@andrew[:gender]).to include("male")
+          expect(@andrew[:sex].length).to eq(1)
+          expect(@andrew[:sex]).to include("male")
         end
         it "knows Andrew lives in city hall" do
           expect(@andrew[:lives].length).to eq(1)
@@ -159,8 +159,8 @@ describe "NYC Pigeon Organizer" do
           ["white", "brown"].each { |c| expect(@alex[:color]).to include(c) }
         end
         it "knows Alex is male" do
-          expect(@alex[:gender].length).to eq(1)
-          expect(@alex[:gender]).to include("male")
+          expect(@alex[:sex].length).to eq(1)
+          expect(@alex[:sex]).to include("male")
         end
         it "knows Alex lives in central park" do
           expect(@alex[:lives].length).to eq(1)
@@ -177,7 +177,7 @@ describe "NYC Pigeon Organizer" do
             :brown => ["Luca"],
             :black => ["Lola"],
           },
-          :gender => {
+          :sex => {
             :male => ["Luca"],
             :female => ["Lola"]
           },
@@ -198,8 +198,8 @@ describe "NYC Pigeon Organizer" do
           expect(@luca[:color]).to include("brown")
         end
         it "knows Alex is male" do
-          expect(@luca[:gender].length).to eq(1)
-          expect(@luca[:gender]).to include("male")
+          expect(@luca[:sex].length).to eq(1)
+          expect(@luca[:sex]).to include("male")
         end
         it "knows Alex lives in central park" do
           expect(@luca[:lives].length).to eq(1)
@@ -216,8 +216,8 @@ describe "NYC Pigeon Organizer" do
           expect(@lola[:color]).to include("black")
         end
         it "knows Alex is male" do
-          expect(@lola[:gender].length).to eq(1)
-          expect(@lola[:gender]).to include("female")
+          expect(@lola[:sex].length).to eq(1)
+          expect(@lola[:sex]).to include("female")
         end
         it "knows Alex lives in central park" do
           expect(@lola[:lives].length).to eq(1)

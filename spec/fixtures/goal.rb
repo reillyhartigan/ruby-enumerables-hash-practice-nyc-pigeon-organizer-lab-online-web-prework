@@ -1,37 +1,37 @@
 {
   "Theo" => {
     :color => ["purple", "grey"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Subway"]
   },
   "Peter Jr." => {
     :color => ["purple", "grey"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Library"]
   },
   "Lucky" => {
     :color => ["purple"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Central Park"]
   },
   "Ms .K" => {
     :color => ["grey", "white"],
-    :gender => ["female"],
+    :sex => ["female"],
     :lives => ["Central Park"]
   },
   "Queenie" => {
     :color => ["white", "brown"],
-    :gender => ["female"],
+    :sex => ["female"],
     :lives => ["Subway"]
   },
   "Andrew" => {
     :color => ["white"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["City Hall"]
   },
   "Alex" => {
     :color => ["white", "brown"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Central Park"]
   }
 }

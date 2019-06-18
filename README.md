@@ -25,7 +25,7 @@ pigeon_data = {
     :white => ["Queenie", "Andrew", "Ms. K", "Alex"],
     :brown => ["Queenie", "Alex"]
   },
-  :gender => {
+  :sex => {
     :male => ["Alex", "Theo", "Peter Jr.", "Andrew", "Lucky"],
     :female => ["Queenie", "Ms. K"]
   },
@@ -38,7 +38,7 @@ pigeon_data = {
 }
 ```
 
-The data above is organized by attributes - `:color`, `:gender`, and `:lives`,
+The data above is organized by attributes - `:color`, `:sex`, and `:lives`,
 each a hash. Within these hashes are arrays of pigeon names.
 
 We want this data, but in a different structure. Rather than sorting by
@@ -46,7 +46,7 @@ attributes, your task is to create a hash where _pigeon names_ are the keys,
 with each name pointing to a hash of their attributes.
 
 Iterate over the hash above, collecting each pigeon by name and insert it as the
-**key** of a new hash. Each of these hashes should have `:color`, `:gender`, and
+**key** of a new hash. Each of these hashes should have `:color`, `:sex`, and
 `:lives` keys assigned to arrays of info about that particular pigeon. Your
 output should look something like the hash below:
 
@@ -54,37 +54,37 @@ output should look something like the hash below:
 pigeon_list = {
   "Theo" => {
     :color => ["purple", "grey"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Subway"]
   },
   "Peter Jr." => {
     :color => ["purple", "grey"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Library"]
   },
   "Lucky" => {
     :color => ["purple"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Central Park"]
   },
   "Ms. K" => {
     :color => ["grey", "white"],
-    :gender => ["female"],
+    :sex => ["female"],
     :lives => ["Central Park"]
   },
   "Queenie" => {
     :color => ["white", "brown"],
-    :gender => ["female"],
+    :sex => ["female"],
     :lives => ["Subway"]
   },
   "Andrew" => {
     :color => ["white"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["City Hall"]
   },
   "Alex" => {
     :color => ["white", "brown"],
-    :gender => ["male"],
+    :sex => ["male"],
     :lives => ["Central Park"]
   }
 }
@@ -106,7 +106,7 @@ pigeon_data = {
     :brown => ["Luca"],
     :black => ["Lola"],
   },
-  :gender => {
+  :sex => {
     :male => ["Luca"],
     :female => ["Lola"]
   },
